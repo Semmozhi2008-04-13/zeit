@@ -1,0 +1,150 @@
+
+/* FOOTER */
+
+.zeit-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding: 45px 7%;
+  background: #f5faf5;
+  border-top: 1px solid #dcebdc;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* LEFT SECTION */
+
+.footer-logo {
+  color: green;
+  font-size: 32px;
+  margin: 0 0 18px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
+  border-radius: 50%;
+  color: green;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: green;
+  color: white;
+}
+
+.social-icons svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.social-icons svg.brand-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+.footer-copyright,
+.footer-license {
+  color: #555;
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+/* CENTER SECTION */
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-center a {
+  color: #444;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.footer-center a:hover {
+  color: green;
+  padding-left: 5px;
+}
+
+/* RIGHT SECTION */
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-right h3 {
+  color: green;
+  font-size: 19px;
+  margin: 5px 0 20px;
+}
+
+.app-store-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 175px;
+  padding: 9px 12px;
+  margin-bottom: 12px;
+  background: #111;
+  color: white;
+  border-radius: 7px;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+.app-store-badge:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
+.store-logo {
+  width: 27px;
+  height: 27px;
+  flex-shrink: 0;
+}
+
+.app-store-badge div {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.app-store-badge small {
+  font-size: 9px;
+}
+
+.app-store-badge strong {
+  font-size: 15px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .zeit-footer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 35px 25px;
+  }
+}

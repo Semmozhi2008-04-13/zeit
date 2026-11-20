@@ -1,0 +1,13 @@
+ZEIT — START HERE
+
+1. Read README-SETUP.md.
+2. Set up MySQL and run database/user.sql only if this is a fresh database.
+3. Check for duplicate phone numbers, then run database/migrations/001_zeit_auth_and_address.sql.
+4. Copy backend/.env.example to backend/.env and enter your local MySQL credentials plus a strong JWT_SECRET.
+5. In backend terminal: npm install && npm start
+6. In frontend terminal: npm install && npm run dev
+7. Open http://localhost:5173 (or the URL Vite prints).
+
+The original UI/CSS and product assets are preserved. Do not copy the old backend/backend 2 folder back into this project.
+
+Password reset note: no SMS provider was supplied. Development mode displays the OTP in the UI. Production SMS delivery must be configured before deployment.
